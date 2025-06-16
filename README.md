@@ -54,4 +54,8 @@ The server will start and the GraphQL playground will be available at [http://lo
 
 ## License
 
-See [LICENSE](./LICENSE) for details.
+Daggerheart is licensed under its own Open Gaming License (OGL). For full details, see the official [Darrington Press Community Gaming License](https://darringtonpress.com/license/).
+
+## Content Attribution
+
+The contents used in this project are all freely available as part of the Daggerheart System Reference Document (SRD), which can be found [here](https://www.daggerheart.com/wp-content/uploads/2025/05/DH-SRD-May202025.pdf).

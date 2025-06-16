@@ -1,7 +1,7 @@
 {
   "name": "daggerheart-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Fan-made GraphQL API for the Daggerheart™ system's SRD content, a tabletop roleplaying game by Darrington Press.",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
