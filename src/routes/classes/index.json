@@ -1,0 +1,121 @@
+{
+  "data": [
+    {
+      "id": "bard",
+      "type": "class",
+      "name": "Bard",
+      "description": "",
+      "subclassOptions": [],
+      "source": {
+        "id": "dh-class-bard",
+        "set": "DH Core",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    },
+    {
+      "id": "druid",
+      "type": "class",
+      "name": "Druid",
+      "description": "",
+      "subclassOptions": [],
+      "source": {
+        "id": "dh-class-druid",
+        "set": "DH Core",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    },
+    {
+      "id": "guardian",
+      "type": "class",
+      "name": "Guardian",
+      "description": "",
+      "subclassOptions": [],
+      "source": {
+        "id": "dh-class-guardian",
+        "set": "DH Core",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    },
+    {
+      "id": "ranger",
+      "type": "class",
+      "name": "Ranger",
+      "description": "",
+      "subclassOptions": [],
+      "source": {
+        "id": "dh-class-ranger",
+        "set": "DH Core",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    },
+    {
+      "id": "rogue",
+      "type": "class",
+      "name": "Rogue",
+      "description": "",
+      "subclassOptions": [],
+      "source": {
+        "id": "dh-class-rogue",
+        "set": "DH Core",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    },
+    {
+      "id": "seraph",
+      "type": "class",
+      "name": "Seraph",
+      "description": "",
+      "subclassOptions": [],
+      "source": {
+        "id": "dh-class-seraph",
+        "set": "DH Core",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    },
+    {
+      "id": "sorcerer",
+      "type": "class",
+      "name": "Sorcerer",
+      "description": "",
+      "subclassOptions": [],
+      "source": {
+        "id": "dh-class-sorcerer",
+        "set": "DH Core",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    },
+    {
+      "id": "warrior",
+      "type": "class",
+      "name": "Warrior",
+      "description": "",
+      "subclassOptions": [],
+      "source": {
+        "id": "dh-class-warrior",
+        "set": "DH Core",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    },
+    {
+      "id": "wizard",
+      "type": "class",
+      "name": "Wizard",
+      "description": "",
+      "subclassOptions": [],
+      "source": {
+        "id": "dh-class-wizard",
+        "set": "DH Core",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    }
+  ]
+}

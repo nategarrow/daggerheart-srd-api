@@ -1,0 +1,80 @@
+{
+  "id": "bard-troubadour",
+  "type": "subclass",
+  "classId": "Bard",
+  "name": "Troubadour",
+  "spellcastTrait": "presence",
+  "levels": {
+    "foundation": {
+      "level": "foundation",
+      "traits": [
+        {
+          "trait": "Gifted Performer",
+          "description": "Describe how you perform for others. You can play each song once per long rest:",
+          "type": "ability",
+          "frequency": "once per long rest (each option)",
+          "options": [
+            {
+              "type": "subclassTraitOption",
+              "option": "Relaxing Song",
+              "description": "You and all allies within Close range clear a Hit Point."
+            },
+            {
+              "type": "subclassTraitOption",
+              "option": "Epic Song",
+              "description": "Make a target within Close range temporarily Vulnerable."
+            },
+            {
+              "type": "subclassTraitOption",
+              "option": "Heartbreaking Song",
+              "description": "You and all allies within Close range gain a Hope."
+            }
+          ]
+        }
+      ],
+      "tags": ["bard", "troubadour", "foundation"],
+      "source": {
+        "id": "001/270",
+        "set": "DH Core",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    },
+    "specialization": {
+      "level": "specialization",
+      "traits": [
+        {
+          "trait": "Maestro",
+          "type": "ability",
+          "frequency": "passive",
+          "description": "Your rallying songs steel the courage of those who listen. When you give a Rally Die to an ally, they can gain a Hope or clear a Stress.",
+          "options": []
+        }
+      ],
+      "tags": ["bard", "troubadour", "specialization"],
+      "source": {
+        "set": "DH Core",
+        "id": "002/270",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    },
+    "mastery": {
+      "level": "mastery",
+      "traits": [
+        {
+          "trait": "Virtuoso",
+          "description": "You are among the greatest of your craft and your skill is boundless. You can perform each of your 'Gifted Performer' feature's songs twice instead of once per long rest.",
+          "options": []
+        }
+      ],
+      "tags": ["bard", "troubadour", "mastery"],
+      "source": {
+        "set": "DH Core",
+        "id": "003/270",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    }
+  }
+}

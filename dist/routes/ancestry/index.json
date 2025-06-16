@@ -1,0 +1,688 @@
+{
+    "data": [
+        {
+            "type": "ancestry",
+            "name": "Clank",
+            "description": "Clanks are sentient mechanical beings built from a variety of materials, including metal, wood, and stone.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-clank-purposeful-design",
+                    "trait": "Purposeful Design",
+                    "type": "trait",
+                    "mechanic": "bonus",
+                    "frequency": "character creation",
+                    "description": "Decide who made you and for what purpose. At character creation, choose one of your Experiences that best aligns with this purpose and gain a permanent +1 bonus to it.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-clank-efficient",
+                    "trait": "Efficient",
+                    "type": "trait",
+                    "mechanic": "ability",
+                    "frequency": "short rest",
+                    "description": "When you take a short rest, you can choose to gain lost move instead of a short rest move.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "clank"],
+                "mechanics": ["bonus", "ability"],
+                "themes": ["construct", "purpose", "efficiency"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "056/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Drakona",
+            "description": "Drakona resemble wingless dragons in humanoid form and possess a powerful elemental breath.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-drakona-scales",
+                    "trait": "Scales",
+                    "type": "trait",
+                    "mechanic": "protection",
+                    "frequency": "passive",
+                    "description": "Your scales act as natural protection. When you would take Severe damage, you can **mark a Stress** to mark 1 fewer Hit Points.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-drakona-elemental-breath",
+                    "trait": "Elemental Breath",
+                    "type": "trait",
+                    "mechanic": "attack",
+                    "frequency": "once per rest",
+                    "description": "Choose an element for your breath (such as electricity, fire, or ice). You can use this breath against a target or group of targets within Very Close range, treating it as an Instinct weapon that deals **d8** magic damage using your Proficiency.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "drakona"],
+                "mechanics": ["protection", "attack"],
+                "themes": ["dragon", "elemental", "resilience"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "057/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Dwarf",
+            "description": "Dwarves are most easily recognized as short humanoids with square frames, dense musculature, and thick hair.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-dwarf-thick-skin",
+                    "trait": "Thick Skin",
+                    "type": "trait",
+                    "mechanic": "protection",
+                    "frequency": "minor damage",
+                    "description": "When you take Minor damage, you can mark **2 Stress** instead of marking a Hit Point.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-dwarf-increased-fortitude",
+                    "trait": "Increased Fortitude",
+                    "type": "trait",
+                    "mechanic": "protection",
+                    "frequency": "spend hope",
+                    "description": "**Spend 3 Hope** to halve incoming physical damage (rounded up).",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "dwarf"],
+                "mechanics": ["protection"],
+                "themes": ["endurance", "resilience", "fortitude"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "058/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Elf",
+            "description": "Elves are typically tall humanoids with pointed ears and acutely attuned senses.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-elf-quick-reactions",
+                    "trait": "Quick Reactions",
+                    "type": "trait",
+                    "mechanic": "advantage",
+                    "frequency": "reaction roll",
+                    "description": "**Mark a Stress** to gain advantage on a reaction roll.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-elf-celestial-trance",
+                    "trait": "Celestial Trance",
+                    "type": "trait",
+                    "mechanic": "ability",
+                    "frequency": "rest",
+                    "description": "During a rest, you can drop into a trance to choose an additional downtime move.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "elf"],
+                "mechanics": ["advantage", "ability"],
+                "themes": ["fey", "senses", "rest"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "059/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Faerie",
+            "description": "Faeries are winged humanoid creatures with insectile features.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-faerie-luckbender",
+                    "trait": "Luckbender",
+                    "type": "trait",
+                    "mechanic": "reroll",
+                    "frequency": "once per session",
+                    "description": "Once per session, after you or a willing ally within Close range makes an action roll, you can **spend 3 Hope** to reroll the Duality Die.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-faerie-wings",
+                    "trait": "Wings",
+                    "type": "trait",
+                    "mechanic": "flight",
+                    "frequency": "passive",
+                    "description": "You can fly. While flying, you can **mark a Stress** after an adversary makes an attack against you to gain a +2 bonus to your Evasion against that attack.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "faerie"],
+                "mechanics": ["reroll", "flight"],
+                "themes": ["fey", "luck", "mobility"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "060/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Faun",
+            "description": "Fauns resemble humanoid goats with curving horns, square pupils, and cloven hooves.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-faun-caprine-leap",
+                    "trait": "Caprine Leap",
+                    "type": "trait",
+                    "mechanic": "mobility",
+                    "frequency": "passive",
+                    "description": "You can leap anywhere within Close range as though you were using normal movement, allowing you to vault obstacles, jump across gaps, or scale barriers with ease.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-faun-kick",
+                    "trait": "Kick",
+                    "type": "trait",
+                    "mechanic": "attack",
+                    "frequency": "passive",
+                    "description": "When you succeed on an attack against a target within Very Close range, you can **mark a Stress** to kick yourself off them, dealing an extra **2d6** damage and knocking back either yourself or the target to Very Close range.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "faun"],
+                "mechanics": ["mobility", "attack"],
+                "themes": ["nature", "agility", "force"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "061/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Firbolg",
+            "description": "Firbolgs are bovine humanoids typically recognized by their broad noses and long, drooping ears.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-firbolg-charge",
+                    "trait": "Charge",
+                    "type": "trait",
+                    "mechanic": "attack",
+                    "frequency": "melee win",
+                    "description": "When you succeed on an Agility Roll to move from Far or Very Far range into Melee range with one or more targets, you can **mark a Stress** to deal **1d12** damage to one of those targets.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-firbolg-unshakable",
+                    "trait": "Unshakable",
+                    "type": "trait",
+                    "mechanic": "resilience",
+                    "frequency": "stress",
+                    "description": "When you would mark a Stress, roll a **d6**. On a result of 6, don't mark it.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "firbolg"],
+                "mechanics": ["attack", "resilience"],
+                "themes": ["bovine", "strength", "endurance"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "062/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Fungirl",
+            "description": "Fungirl resemble humanoid mushrooms.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-fungirl-fungirl-network",
+                    "trait": "Fungirl Network",
+                    "type": "trait",
+                    "mechanic": "instinct",
+                    "frequency": "instinct roll",
+                    "description": "Make an **Instinct Roll (12)** to use your mycelial array to speak with others of your ancestry. On a success, you can communicate across any distance.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-fungirl-death-connection",
+                    "trait": "Death Connection",
+                    "type": "trait",
+                    "mechanic": "ability",
+                    "frequency": "touch corpse",
+                    "description": "While touching a corpse as part of the recent, you can **mark a Stress** to extract one memory from the corpse related to a specific emotion or sensation of your choice.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "fungirl"],
+                "mechanics": ["instinct", "ability"],
+                "themes": ["fungus", "connection", "memory"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "063/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Galapa",
+            "description": "Galapa resemble anthropomorphic turtles with large, domed shells into which they can retract.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-galapa-shell",
+                    "trait": "Shell",
+                    "type": "trait",
+                    "mechanic": "protection",
+                    "frequency": "passive",
+                    "description": "Gain a bonus to your damage thresholds equal to your Proficiency.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-galapa-retreat",
+                    "trait": "Retreat",
+                    "type": "trait",
+                    "mechanic": "defense",
+                    "frequency": "mark stress",
+                    "description": "**Mark a Stress** to retract into your shell. While in your shell, you have resistance to physical damage, you have disadvantage on action rolls, and you can't move.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "galapa"],
+                "mechanics": ["protection", "defense"],
+                "themes": ["turtle", "defense", "resilience"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "064/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Giant",
+            "description": "Giants are towering humanoids with broad shoulders, long arms, and one to three eyes.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-giant-endurance",
+                    "trait": "Endurance",
+                    "type": "trait",
+                    "mechanic": "bonus",
+                    "frequency": "character creation",
+                    "description": "Gain an additional Hit Point slot at character creation.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-giant-reach",
+                    "trait": "Reach",
+                    "type": "trait",
+                    "mechanic": "ability",
+                    "frequency": "passive",
+                    "description": "Treat any weapon, ability, spell, or other feature that has a Melee range as though it has a Very Close range instead.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "giant"],
+                "mechanics": ["bonus", "ability"],
+                "themes": ["size", "strength", "reach"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "065/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Goblin",
+            "description": "Goblins are small humanoids easily recognizable by their large eyes and massive membranous ears.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-goblin-surefooted",
+                    "trait": "Surefooted",
+                    "type": "trait",
+                    "mechanic": "advantage",
+                    "frequency": "passive",
+                    "description": "You ignore disadvantage on Agility Rolls.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-goblin-danger-sense",
+                    "trait": "Danger Sense",
+                    "type": "trait",
+                    "mechanic": "ability",
+                    "frequency": "once per rest",
+                    "description": "Once per rest, **mark a Stress** to force an adversary to reroll an attack against you or an ally within Very Close range.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "goblin"],
+                "mechanics": ["advantage", "ability"],
+                "themes": ["agility", "luck", "survival"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "066/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Halfling",
+            "description": "Halflings are small humanoids with large hairy feet and prominent rounded ears.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-halfling-luckbringer",
+                    "trait": "Luckbringer",
+                    "type": "trait",
+                    "mechanic": "ability",
+                    "frequency": "start of session",
+                    "description": "At the start of each session, everyone in your party gains a Hope.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-halfling-internal-compass",
+                    "trait": "Internal Compass",
+                    "type": "trait",
+                    "mechanic": "reroll",
+                    "frequency": "hope die",
+                    "description": "When you roll a 1 on your Hope Die, you can reroll it.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "halfling"],
+                "mechanics": ["ability", "reroll"],
+                "themes": ["luck", "guidance", "community"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "067/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Human",
+            "description": "Humans are most easily recognized by their dexterous hands, rounded ears, and bodies built for endurance.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-human-high-stamina",
+                    "trait": "High Stamina",
+                    "type": "trait",
+                    "mechanic": "bonus",
+                    "frequency": "character creation",
+                    "description": "Gain an additional Stress slot at character creation.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-human-adaptability",
+                    "trait": "Adaptability",
+                    "type": "trait",
+                    "mechanic": "reroll",
+                    "frequency": "fail experience roll",
+                    "description": "When you fail a roll that utilized one of your Experiences, you can **mark a Stress** to reroll.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "human"],
+                "mechanics": ["bonus", "reroll"],
+                "themes": ["endurance", "adaptability", "versatility"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "068/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Infernís",
+            "description": "Infernís are humanoids who possess sharp canine teeth, pointed ears, and horns. They are the descendants of demons from the Circles Below.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-infernis-fearless",
+                    "trait": "Fearless",
+                    "type": "trait",
+                    "mechanic": "ability",
+                    "frequency": "roll with fear",
+                    "description": "When you roll with Fear, you can **mark 2 Stress** to change it into a roll with Hope instead.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-infernis-dread-visage",
+                    "trait": "Dread Visage",
+                    "type": "trait",
+                    "mechanic": "advantage",
+                    "frequency": "intimidate",
+                    "description": "You have advantage on rolls to intimidate hostile creatures.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "infernis"],
+                "mechanics": ["ability", "advantage"],
+                "themes": ["demon", "fear", "intimidation"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "069/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Katari",
+            "description": "Katari are feline humanoids with retractable claws, vertically slit pupils, and high, triangular ears.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-katari-feline-instincts",
+                    "trait": "Feline Instincts",
+                    "type": "trait",
+                    "mechanic": "reroll",
+                    "frequency": "agility roll",
+                    "description": "When you make an Agility Roll, you can **spend 2 Hope** to reroll your Hope Die.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-katari-retracting-claws",
+                    "trait": "Retracting Claws",
+                    "type": "trait",
+                    "mechanic": "attack",
+                    "frequency": "melee attack",
+                    "description": "Make an **Agility Roll** to scratch a target within Melee range. On a success, they become temporarily Vulnerable.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "katari"],
+                "mechanics": ["reroll", "attack"],
+                "themes": ["feline", "agility", "stealth"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "070/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Orc",
+            "description": "Orcs are humanoids most easily recognized by their square features and boar-like tusks that protrude from their lower jaw.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-orc-sturdy",
+                    "trait": "Sturdy",
+                    "type": "trait",
+                    "mechanic": "protection",
+                    "frequency": "last hit point",
+                    "description": "When you have 1 Hit Point remaining, attacks against you have disadvantage.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-orc-tusks",
+                    "trait": "Tusks",
+                    "type": "trait",
+                    "mechanic": "attack",
+                    "frequency": "melee attack",
+                    "description": "When you succeed on an attack against a target within Melee range, you can **spend a Hope** to gore the target with your tusks, dealing an extra **1d6** damage.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "orc"],
+                "mechanics": ["protection", "attack"],
+                "themes": ["boar", "ferocity", "endurance"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "071/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Ribbet",
+            "description": "Ribbets resemble anthropomorphic frogs with protruding eyes and webbed hands and feet.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-ribbet-amphibious",
+                    "trait": "Amphibious",
+                    "type": "trait",
+                    "mechanic": "ability",
+                    "frequency": "passive",
+                    "description": "You can breathe and move naturally underwater.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-ribbet-long-tongue",
+                    "trait": "Long Tongue",
+                    "type": "trait",
+                    "mechanic": "attack",
+                    "frequency": "melee attack",
+                    "description": "You can use your long tongue to grab things or targets within Close range. **Mark a Stress** to use your tongue as a Melee Close weapon that deals **d12** physical damage using your Proficiency.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "ribbet"],
+                "mechanics": ["ability", "attack"],
+                "themes": ["amphibian", "reach", "adaptation"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "072/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        },
+        {
+            "type": "ancestry",
+            "name": "Simiah",
+            "description": "Simiah resemble anthropomorphic monkeys and apes with long limbs and prehensile feet.",
+            "descriptionFormat": "markdown",
+            "traits": [
+                {
+                    "id": "ancestry-simiah-natural-climber",
+                    "trait": "Natural Climber",
+                    "type": "trait",
+                    "mechanic": "advantage",
+                    "frequency": "agility rolls",
+                    "description": "You have advantage on Agility Rolls that involve balancing and climbing.",
+                    "descriptionFormat": "markdown"
+                },
+                {
+                    "id": "ancestry-simiah-nimble",
+                    "trait": "Nimble",
+                    "type": "trait",
+                    "mechanic": "bonus",
+                    "frequency": "character creation",
+                    "description": "Gain a permanent +1 bonus to your Evasion at character creation.",
+                    "descriptionFormat": "markdown"
+                }
+            ],
+            "tags": {
+                "categories": ["ancestry", "simiah"],
+                "mechanics": ["advantage", "bonus"],
+                "themes": ["primate", "agility", "mobility"]
+            },
+            "ancestryImage": {},
+            "source": {
+                "key": "dh-core",
+                "set": "DH Core",
+                "id": "073/270",
+                "publisher": "Daggerheart © Darrington Press 2025"
+            }
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "bard-wordsmith",
+  "type": "subclass",
+  "classId": "Bard",
+  "name": "Wordsmith",
+  "spellcastTrait": "presence",
+  "levels": {
+    "foundation": {
+      "level": "foundation",
+      "traits": [
+        {
+          "trait": "Rousing Speech",
+          "description": "Once per long rest, you can give a heartfelt, inspiring speech. All allies within Far range clear 2 Stress.",
+          "options": []
+        },
+        {
+          "trait": "Heart of a Poet",
+          "description": "After you make an action roll to impress, persuade, or offend someone, you can **spend a Hope** to add a **d4** to the roll.",
+          "options": []
+        }
+      ],
+      "source": {
+        "set": "DH Core",
+        "id": "004/270",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    },
+    "specialization": {
+      "level": "specialization",
+      "traits": [
+        {
+          "trait": "Eloquent",
+          "description": "Your moving words boost morale. Once per session, when you encourage an ally, you can do one of the following:",
+          "type": "ability",
+          "frequency": "once per session",
+          "options": [
+            {
+              "option": "",
+              "description": "Allow them to find a mundane object or tool they need."
+            },
+            {
+              "option": "",
+              "description": "Help an Ally without spending Hope"
+            },
+            {
+              "option": "",
+              "description": "Give them an additional downtime move during their next rest."
+            }
+          ]
+        }
+      ],
+      "source": {
+        "set": "DH Core",
+        "id": "005/270",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    },
+    "mastery": {
+      "level": "mastery",
+      "traits": [
+        {
+          "trait": "Epic Poetry",
+          "description": "Your Rally Die increases to a **d10**. Additionally, when you Help an Ally, you can narrate the moment as if you were writing the tale of their heroism in a memoir. When you do, roll a **d10** as your advantage die.",
+          "options": []
+        }
+      ],
+      "source": {
+        "set": "DH Core",
+        "id": "006/270",
+        "publisher": "Daggerheart © Darrington Press 2025",
+        "updated": "2025-06-15"
+      }
+    }
+  }
+}
