@@ -15,11 +15,7 @@ export function joinSubclasses(className: string): Subclass[] {
   if (!fs.existsSync(subclassesDir)) {
     return [];
   }
-
-  //  subclassesDir: /Users/ngarrow/Development/NGTech/projects/daggerheart-api/dist/routes/subclasses/bard
   
-  console.log(" subclassesDir:", subclassesDir);
-
   const files = fs.readdirSync(subclassesDir);
   console.log(" files:", files?.length);
   const subclasses: Subclass[] = [];

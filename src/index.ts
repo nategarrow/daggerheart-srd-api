@@ -3,10 +3,10 @@ import { startStandaloneServer } from "@apollo/server/standalone";
 import { gql } from "graphql-tag";
 
 import classes from "./routes/classes/index.json";
+import ancestries from "./routes/ancestry/index.json";
+import communities from "./routes/community/index.json";
 import { joinSubclasses } from "./routes/classes/utils";
 import "./routes/subclasses/index.json";
-import "./routes/community/index.json";
-import "./routes/ancestry/index.json";
 
 const typeDefs = gql`
   type Source {
@@ -63,16 +63,66 @@ const typeDefs = gql`
     description: String
   }
 
+  type Ancestry {
+    type: String
+    name: String!
+    description: String
+    descriptionFormat: String
+    traits: [Trait]
+    tags: Tag
+    ancestryImage: File
+    source: Source!
+  }
+
+  type Community {
+    type: String
+    name: String
+    description: String
+    descriptionFormat: String
+    traits: [Trait]
+    tags: Tag
+    communityImage: File
+    source: Source!
+  }
+
+  type Trait {
+    id: String!
+    trait: String
+    type: String
+    mechanic: String
+    frequency: String
+    description: String
+    descriptionFormat: String
+  }
+
+  type Tag {
+    categories: [String]
+    mechanics: [String]
+    themes: [String]
+  }
+
+  type File {
+    id: String
+    url: String
+    width: Int
+    height: Int
+    format: String
+  }
+
   type Query {
     classes: [CharacterClass]!
     class(id: ID!): CharacterClass
+    ancestries: [Ancestry]!
+    ancestry(id: ID!): Ancestry
+    communities: [Community]!
+    community(id: ID!): Community
   }
 `;
 
 const resolvers = {
   Query: {
     classes: () => {
-      return classes.data.map((c: any) => {
+      return classes.classes.map((c: any) => {
         const subclassOptions = joinSubclasses(c.name);
         console.log("subclassOptions:", c.name);
 
@@ -83,7 +133,23 @@ const resolvers = {
       });
     },
     class: (_: any, { id }: { id: string }) => {
-      return classes.data.find(
+      return classes.classes.find(
+        (c: any) => c.id.toLowerCase() === id.toLowerCase()
+      );
+    },
+    ancestries: () => {
+      return ancestries.ancestries;
+    },
+    ancestry: (_: any, { id }: { id: string }) => {
+      return ancestries.ancestries.find(
+        (c: any) => c.id.toLowerCase() === id.toLowerCase()
+      );
+    },
+    communities: () => {
+      return communities.communities;
+    },
+    community: (_: any, { id }: { id: string }) => {
+      return communities.communities.find(
         (c: any) => c.id.toLowerCase() === id.toLowerCase()
       );
     },

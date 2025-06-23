@@ -1,4 +1,4 @@
-# Daggerheart API
+# Daggerheart SRD API
 
 A GraphQL API built with Express and Apollo Server to provide structured access to the contents of the Core Rulebook. This project enables clients to query rulebook data efficiently for use in web apps, tools, or integrations.
 
