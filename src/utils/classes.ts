@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-import domains from "../domains/index.json";
+import domains from "../routes/domains/index.json";
 
 export function joinSubclasses(className: string): Subclass[] {
   const subclassesDir = path.join(

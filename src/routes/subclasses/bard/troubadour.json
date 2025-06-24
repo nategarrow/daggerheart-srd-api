@@ -9,7 +9,7 @@
       "level": "foundation",
       "traits": [
         {
-          "trait": "Gifted Performer",
+          "name": "Gifted Performer",
           "description": "Describe how you perform for others. You can play each song once per long rest:",
           "type": "ability",
           "frequency": "once per long rest (each option)",
@@ -44,7 +44,7 @@
       "level": "specialization",
       "traits": [
         {
-          "trait": "Maestro",
+          "name": "Maestro",
           "type": "ability",
           "frequency": "passive",
           "description": "Your rallying songs steel the courage of those who listen. When you give a Rally Die to an ally, they can gain a Hope or clear a Stress.",
@@ -63,7 +63,7 @@
       "level": "mastery",
       "traits": [
         {
-          "trait": "Virtuoso",
+          "name": "Virtuoso",
           "description": "You are among the greatest of your craft and your skill is boundless. You can perform each of your 'Gifted Performer' feature's songs twice instead of once per long rest.",
           "options": []
         }
@@ -78,3 +78,4 @@
     }
   }
 }
+

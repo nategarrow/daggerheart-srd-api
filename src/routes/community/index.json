@@ -8,7 +8,7 @@
       "traits": [
         {
           "id": "community-highborne-privilege",
-          "trait": "Privilege",
+          "name": "Privilege",
           "type": "trait",
           "mechanic": "advantage",
           "frequency": "passive",
@@ -38,7 +38,7 @@
       "traits": [
         {
           "id": "community-loreborne-well-read",
-          "trait": "Well-Read",
+          "name": "Well-Read",
           "type": "trait",
           "mechanic": "advantage",
           "frequency": "passive",
@@ -69,7 +69,7 @@
         {
           "id": "community-orderborne-dedicated",
           "type": "trait",
-          "trait": "Dedicated",
+          "name": "Dedicated",
           "mechanic": "ability",
           "frequency": "once per rest",
           "description": "Record three sayings or values your upbringing instilled in you. Once per rest, when you describe how you're embodying one of these principles through your current action, you can roll a **d20** as your Hope Die.",
@@ -98,7 +98,7 @@
       "traits": [
         {
           "id": "community-ridgeborne-steady",
-          "trait": "Steady",
+          "name": "Steady",
           "type": "trait",
           "mechanic": "advantage",
           "frequency": "passive",
@@ -128,7 +128,7 @@
       "traits": [
         {
           "id": "community-seaborne-know-the-tide",
-          "trait": "Know the Tide",
+          "name": "Know the Tide",
           "type": "trait",
           "mechanic": "ability",
           "frequency": "one token per level",
@@ -158,7 +158,7 @@
       "traits": [
         {
           "id": "community-slyborne-scoundrel",
-          "trait": "Scoundrel",
+          "name": "Scoundrel",
           "type": "trait",
           "mechanic": "advantage",
           "frequency": "passive",
@@ -188,7 +188,7 @@
       "traits": [
         {
           "id": "community-underborne-low-light-living",
-          "trait": "Low-Light Living",
+          "name": "Low-Light Living",
           "type": "trait",
           "mechanic": "advantage",
           "frequency": "passive",
@@ -218,7 +218,7 @@
       "traits": [
         {
           "id": "community-wanderborne-nomadic-pack",
-          "trait": "Nomadic Pack",
+          "name": "Nomadic Pack",
           "type": "trait",
           "mechanic": "ability",
           "frequency": "once per session",

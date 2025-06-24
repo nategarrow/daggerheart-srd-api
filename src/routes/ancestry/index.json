@@ -8,7 +8,7 @@
       "traits": [
         {
           "id": "ancestry-clank-purposeful-design",
-          "trait": "Purposeful Design",
+          "name": "Purposeful Design",
           "type": "trait",
           "mechanic": "bonus",
           "frequency": "character creation",
@@ -17,7 +17,7 @@
         },
         {
           "id": "ancestry-clank-efficient",
-          "trait": "Efficient",
+          "name": "Efficient",
           "type": "trait",
           "mechanic": "ability",
           "frequency": "short rest",
@@ -46,7 +46,7 @@
       "traits": [
         {
           "id": "ancestry-drakona-scales",
-          "trait": "Scales",
+          "name": "Scales",
           "type": "trait",
           "mechanic": "protection",
           "frequency": "passive",
@@ -55,7 +55,7 @@
         },
         {
           "id": "ancestry-drakona-elemental-breath",
-          "trait": "Elemental Breath",
+          "name": "Elemental Breath",
           "type": "trait",
           "mechanic": "attack",
           "frequency": "once per rest",
@@ -84,7 +84,7 @@
       "traits": [
         {
           "id": "ancestry-dwarf-thick-skin",
-          "trait": "Thick Skin",
+          "name": "Thick Skin",
           "type": "trait",
           "mechanic": "protection",
           "frequency": "minor damage",
@@ -93,7 +93,7 @@
         },
         {
           "id": "ancestry-dwarf-increased-fortitude",
-          "trait": "Increased Fortitude",
+          "name": "Increased Fortitude",
           "type": "trait",
           "mechanic": "protection",
           "frequency": "spend hope",
@@ -122,7 +122,7 @@
       "traits": [
         {
           "id": "ancestry-elf-quick-reactions",
-          "trait": "Quick Reactions",
+          "name": "Quick Reactions",
           "type": "trait",
           "mechanic": "advantage",
           "frequency": "reaction roll",
@@ -131,7 +131,7 @@
         },
         {
           "id": "ancestry-elf-celestial-trance",
-          "trait": "Celestial Trance",
+          "name": "Celestial Trance",
           "type": "trait",
           "mechanic": "ability",
           "frequency": "rest",
@@ -160,7 +160,7 @@
       "traits": [
         {
           "id": "ancestry-faerie-luckbender",
-          "trait": "Luckbender",
+          "name": "Luckbender",
           "type": "trait",
           "mechanic": "reroll",
           "frequency": "once per session",
@@ -169,7 +169,7 @@
         },
         {
           "id": "ancestry-faerie-wings",
-          "trait": "Wings",
+          "name": "Wings",
           "type": "trait",
           "mechanic": "flight",
           "frequency": "passive",
@@ -198,7 +198,7 @@
       "traits": [
         {
           "id": "ancestry-faun-caprine-leap",
-          "trait": "Caprine Leap",
+          "name": "Caprine Leap",
           "type": "trait",
           "mechanic": "mobility",
           "frequency": "passive",
@@ -207,7 +207,7 @@
         },
         {
           "id": "ancestry-faun-kick",
-          "trait": "Kick",
+          "name": "Kick",
           "type": "trait",
           "mechanic": "attack",
           "frequency": "passive",
@@ -236,7 +236,7 @@
       "traits": [
         {
           "id": "ancestry-firbolg-charge",
-          "trait": "Charge",
+          "name": "Charge",
           "type": "trait",
           "mechanic": "attack",
           "frequency": "melee win",
@@ -245,7 +245,7 @@
         },
         {
           "id": "ancestry-firbolg-unshakable",
-          "trait": "Unshakable",
+          "name": "Unshakable",
           "type": "trait",
           "mechanic": "resilience",
           "frequency": "stress",
@@ -274,7 +274,7 @@
       "traits": [
         {
           "id": "ancestry-fungirl-fungirl-network",
-          "trait": "Fungirl Network",
+          "name": "Fungirl Network",
           "type": "trait",
           "mechanic": "instinct",
           "frequency": "instinct roll",
@@ -283,7 +283,7 @@
         },
         {
           "id": "ancestry-fungirl-death-connection",
-          "trait": "Death Connection",
+          "name": "Death Connection",
           "type": "trait",
           "mechanic": "ability",
           "frequency": "touch corpse",
@@ -312,7 +312,7 @@
       "traits": [
         {
           "id": "ancestry-galapa-shell",
-          "trait": "Shell",
+          "name": "Shell",
           "type": "trait",
           "mechanic": "protection",
           "frequency": "passive",
@@ -321,7 +321,7 @@
         },
         {
           "id": "ancestry-galapa-retreat",
-          "trait": "Retreat",
+          "name": "Retreat",
           "type": "trait",
           "mechanic": "defense",
           "frequency": "mark stress",
@@ -350,7 +350,7 @@
       "traits": [
         {
           "id": "ancestry-giant-endurance",
-          "trait": "Endurance",
+          "name": "Endurance",
           "type": "trait",
           "mechanic": "bonus",
           "frequency": "character creation",
@@ -359,7 +359,7 @@
         },
         {
           "id": "ancestry-giant-reach",
-          "trait": "Reach",
+          "name": "Reach",
           "type": "trait",
           "mechanic": "ability",
           "frequency": "passive",
@@ -388,7 +388,7 @@
       "traits": [
         {
           "id": "ancestry-goblin-surefooted",
-          "trait": "Surefooted",
+          "name": "Surefooted",
           "type": "trait",
           "mechanic": "advantage",
           "frequency": "passive",
@@ -397,7 +397,7 @@
         },
         {
           "id": "ancestry-goblin-danger-sense",
-          "trait": "Danger Sense",
+          "name": "Danger Sense",
           "type": "trait",
           "mechanic": "ability",
           "frequency": "once per rest",
@@ -426,7 +426,7 @@
       "traits": [
         {
           "id": "ancestry-halfling-luckbringer",
-          "trait": "Luckbringer",
+          "name": "Luckbringer",
           "type": "trait",
           "mechanic": "ability",
           "frequency": "start of session",
@@ -435,7 +435,7 @@
         },
         {
           "id": "ancestry-halfling-internal-compass",
-          "trait": "Internal Compass",
+          "name": "Internal Compass",
           "type": "trait",
           "mechanic": "reroll",
           "frequency": "hope die",
@@ -464,7 +464,7 @@
       "traits": [
         {
           "id": "ancestry-human-high-stamina",
-          "trait": "High Stamina",
+          "name": "High Stamina",
           "type": "trait",
           "mechanic": "bonus",
           "frequency": "character creation",
@@ -473,7 +473,7 @@
         },
         {
           "id": "ancestry-human-adaptability",
-          "trait": "Adaptability",
+          "name": "Adaptability",
           "type": "trait",
           "mechanic": "reroll",
           "frequency": "fail experience roll",
@@ -502,7 +502,7 @@
       "traits": [
         {
           "id": "ancestry-infernis-fearless",
-          "trait": "Fearless",
+          "name": "Fearless",
           "type": "trait",
           "mechanic": "ability",
           "frequency": "roll with fear",
@@ -511,7 +511,7 @@
         },
         {
           "id": "ancestry-infernis-dread-visage",
-          "trait": "Dread Visage",
+          "name": "Dread Visage",
           "type": "trait",
           "mechanic": "advantage",
           "frequency": "intimidate",
@@ -540,7 +540,7 @@
       "traits": [
         {
           "id": "ancestry-katari-feline-instincts",
-          "trait": "Feline Instincts",
+          "name": "Feline Instincts",
           "type": "trait",
           "mechanic": "reroll",
           "frequency": "agility roll",
@@ -549,7 +549,7 @@
         },
         {
           "id": "ancestry-katari-retracting-claws",
-          "trait": "Retracting Claws",
+          "name": "Retracting Claws",
           "type": "trait",
           "mechanic": "attack",
           "frequency": "melee attack",
@@ -578,7 +578,7 @@
       "traits": [
         {
           "id": "ancestry-orc-sturdy",
-          "trait": "Sturdy",
+          "name": "Sturdy",
           "type": "trait",
           "mechanic": "protection",
           "frequency": "last hit point",
@@ -587,7 +587,7 @@
         },
         {
           "id": "ancestry-orc-tusks",
-          "trait": "Tusks",
+          "name": "Tusks",
           "type": "trait",
           "mechanic": "attack",
           "frequency": "melee attack",
@@ -616,7 +616,7 @@
       "traits": [
         {
           "id": "ancestry-ribbet-amphibious",
-          "trait": "Amphibious",
+          "name": "Amphibious",
           "type": "trait",
           "mechanic": "ability",
           "frequency": "passive",
@@ -625,7 +625,7 @@
         },
         {
           "id": "ancestry-ribbet-long-tongue",
-          "trait": "Long Tongue",
+          "name": "Long Tongue",
           "type": "trait",
           "mechanic": "attack",
           "frequency": "melee attack",
@@ -654,7 +654,7 @@
       "traits": [
         {
           "id": "ancestry-simiah-natural-climber",
-          "trait": "Natural Climber",
+          "name": "Natural Climber",
           "type": "trait",
           "mechanic": "advantage",
           "frequency": "agility rolls",
@@ -663,7 +663,7 @@
         },
         {
           "id": "ancestry-simiah-nimble",
-          "trait": "Nimble",
+          "name": "Nimble",
           "type": "trait",
           "mechanic": "bonus",
           "frequency": "character creation",
