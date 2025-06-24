@@ -5,7 +5,8 @@ import { gql } from "graphql-tag";
 import classes from "./routes/classes/index.json";
 import ancestries from "./routes/ancestry/index.json";
 import communities from "./routes/community/index.json";
-import { joinSubclasses } from "./routes/classes/utils";
+import domains from "./routes/domains/index.json";
+import { joinDomains, joinSubclasses } from "./routes/classes/utils";
 import "./routes/subclasses/index.json";
 
 const typeDefs = gql`
@@ -16,12 +17,32 @@ const typeDefs = gql`
     updated: String!
   }
 
+  type Domain {
+    id: String!
+    name: String!
+    description: String
+    classes: [String]
+    source: Source!
+  }
+
+  type DomainCard {
+    id: String!
+    domain: String!
+    name: String!
+  }
+
+  type DomainQuery {
+    domain: [Domain]!
+    cards: [DomainCard]!
+  }
+
   type CharacterClass {
     id: ID!
     type: String!
     name: String!
     description: String
     subclassOptions: [Subclass]
+    domains: [Domain]
     source: Source!
   }
 
@@ -110,33 +131,18 @@ const typeDefs = gql`
   }
 
   type Query {
-    classes: [CharacterClass]!
-    class(id: ID!): CharacterClass
+    classes(verbose: Boolean): [CharacterClass]!
+    class(id: ID!, verbose: Boolean): CharacterClass
     ancestries: [Ancestry]!
     ancestry(id: ID!): Ancestry
     communities: [Community]!
     community(id: ID!): Community
+    domains: DomainQuery
   }
 `;
 
 const resolvers = {
   Query: {
-    classes: () => {
-      return classes.classes.map((c: any) => {
-        const subclassOptions = joinSubclasses(c.name);
-        console.log("subclassOptions:", c.name);
-
-        return {
-          ...c,
-          subclassOptions,
-        };
-      });
-    },
-    class: (_: any, { id }: { id: string }) => {
-      return classes.classes.find(
-        (c: any) => c.id.toLowerCase() === id.toLowerCase()
-      );
-    },
     ancestries: () => {
       return ancestries.ancestries;
     },
@@ -145,6 +151,35 @@ const resolvers = {
         (c: any) => c.id.toLowerCase() === id.toLowerCase()
       );
     },
+    classes: () => {
+      return classes.classes.map((c: any) => {
+        const subclassOptions = joinSubclasses(c.name);
+        const domainList = joinDomains(c.domains || []);
+
+        return {
+          ...c,
+          domains: domainList,
+          subclassOptions,
+        };
+      });
+    },
+    class: (_: any, { id }: { id: string }) => {
+      const reqClass = classes.classes.find(
+        (c: any) => c.id.toLowerCase() === id.toLowerCase()
+      );
+      if (reqClass) {
+        const subclassOptions = joinSubclasses(reqClass.name);
+        const domainList = joinDomains(reqClass.domains || []);
+
+        return {
+          ...reqClass,
+          domains: domainList,
+          subclassOptions,
+        };
+      } else {
+        throw new Error(`Class with id '${id}' was not found.`);
+      }
+    },
     communities: () => {
       return communities.communities;
     },
@@ -152,6 +187,9 @@ const resolvers = {
       return communities.communities.find(
         (c: any) => c.id.toLowerCase() === id.toLowerCase()
       );
+    },
+    domains: () => {
+      return domains;
     },
   },
 };
@@ -168,3 +206,4 @@ const server = new ApolloServer({
 
   console.log(`🚀  Server ready at: ${url}`);
 })();
+

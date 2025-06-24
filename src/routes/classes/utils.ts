@@ -1,7 +1,8 @@
 import fs from "fs";
 import path from "path";
 
-// If using CommonJS, __dirname is available natively
+import domains from "../domains/index.json";
+
 export function joinSubclasses(className: string): Subclass[] {
   const subclassesDir = path.join(
     __dirname,
@@ -9,15 +10,12 @@ export function joinSubclasses(className: string): Subclass[] {
     "subclasses",
     className.toLowerCase()
   );
-  console.log(" subclassesDir:", subclassesDir);
 
-  console.log(" fs.existsSync(subclassesDir):", fs.existsSync(subclassesDir));
   if (!fs.existsSync(subclassesDir)) {
     return [];
   }
-  
+
   const files = fs.readdirSync(subclassesDir);
-  console.log(" files:", files?.length);
   const subclasses: Subclass[] = [];
 
   files.forEach((file) => {
@@ -36,3 +34,18 @@ export function joinSubclasses(className: string): Subclass[] {
 
   return subclasses;
 }
+
+export function joinDomains(domainIds: string[]): Domain[] {
+  const { domain } = domains;
+
+  const domainList: Domain[] = domainIds.reduce((acc, dmn) => {
+    const domainData = domain.find((d) => d.id === dmn);
+    if (domainData) {
+      acc.push(domainData);
+    }
+    return acc;
+  }, [] as Domain[]);
+
+  return domainList;
+}
+

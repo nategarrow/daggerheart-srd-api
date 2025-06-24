@@ -53,3 +53,18 @@ declare type CharacterClass = {
   subclassOptions?: Subclass[];
   source: Source;
 };
+
+declare type Domain = {
+  id: string;
+  name: string;
+  description?: string;
+  classes: string[];
+  source: Source;
+};
+
+declare type DomainCard = {
+  id: string;
+  domain: string;
+  name: string;
+};
+

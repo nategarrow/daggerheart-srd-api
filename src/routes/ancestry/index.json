@@ -32,9 +32,9 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
-        "set": "DH Core",
         "id": "056/270",
+        "set": "DH Core",
+        "updated": "2025-05-19",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
     },
@@ -70,8 +70,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "057/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -108,8 +108,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "058/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -146,8 +146,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "059/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -184,8 +184,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "060/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -222,8 +222,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "061/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -260,8 +260,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "062/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -298,8 +298,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "063/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -336,8 +336,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "064/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -374,8 +374,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "065/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -412,8 +412,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "066/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -450,8 +450,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "067/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -488,8 +488,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "068/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -526,8 +526,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "069/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -564,8 +564,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "070/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -602,8 +602,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "071/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -640,8 +640,8 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "072/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
@@ -678,11 +678,12 @@
       },
       "ancestryImage": {},
       "source": {
-        "key": "dh-core",
         "set": "DH Core",
+        "updated": "2025-05-19",
         "id": "073/270",
         "publisher": "Daggerheart © Darrington Press 2025"
       }
     }
   ]
 }
+
