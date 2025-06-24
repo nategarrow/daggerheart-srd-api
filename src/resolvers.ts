@@ -1,3 +1,5 @@
+import { GraphQLError } from "graphql";
+
 import classes from "./routes/classes/index.json";
 import ancestries from "./routes/ancestry/index.json";
 import communities from "./routes/community/index.json";
@@ -12,9 +14,18 @@ const resolvers = {
       return ancestries.ancestries;
     },
     ancestry: (_: any, { id }: { id: string }) => {
-      return ancestries.ancestries.find(
+      const reqAncestry = ancestries.ancestries.find(
         (c: any) => c.id.toLowerCase() === id.toLowerCase()
       );
+
+      if (reqAncestry) return reqAncestry;
+
+      throw new GraphQLError(`Ancestry with id '${id}' was not found.`, {
+        extensions: {
+          code: "NOT_FOUND",
+          id,
+        },
+      });
     },
     classes: () => {
       return classes.classes.map((c: any) => {
@@ -41,20 +52,51 @@ const resolvers = {
           domains: domainList,
           subclassOptions,
         };
-      } else {
-        throw new Error(`Class with id '${id}' was not found.`);
       }
+
+      throw new GraphQLError(`Class with id '${id}' was not found.`, {
+        extensions: {
+          code: "NOT_FOUND",
+          id,
+        },
+      });
     },
     communities: () => {
       return communities.communities;
     },
     community: (_: any, { id }: { id: string }) => {
-      return communities.communities.find(
+      const reqCommunity = communities.communities.find(
         (c: any) => c.id.toLowerCase() === id.toLowerCase()
       );
+
+      if (reqCommunity) {
+        return reqCommunity;
+      }
+
+      throw new GraphQLError(`Community with id '${id}' was not found.`, {
+        extensions: {
+          code: "NOT_FOUND",
+          id,
+        },
+      });
     },
     domains: () => {
       return domains;
+    },
+    domain: (_: any, { id }: { id: string }) => {
+      const reqDomain = domains.domain.find(
+        (c: any) => c.id.toLowerCase() === id.toLowerCase()
+      );
+      if (reqDomain) {
+        return reqDomain;
+      }
+
+      throw new GraphQLError(`Domain with id '${id}' was not found.`, {
+        extensions: {
+          code: "NOT_FOUND",
+          id,
+        },
+      });
     },
   },
 };

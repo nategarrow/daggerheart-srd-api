@@ -1,6 +1,7 @@
 import { gql } from "graphql-tag";
 
 const typeDefs = gql`
+  # Global
   type Source {
     id: String!
     set: String!
@@ -8,6 +9,31 @@ const typeDefs = gql`
     updated: String!
   }
 
+  type Trait {
+    id: String!
+    name: String
+    type: String
+    mechanic: String
+    frequency: String
+    description: String
+    descriptionFormat: String
+  }
+
+  type Tag {
+    categories: [String]
+    mechanics: [String]
+    themes: [String]
+  }
+
+  type File {
+    id: String
+    url: String
+    width: Int
+    height: Int
+    format: String
+  }
+
+  # Domains
   type Domain {
     id: String!
     name: String!
@@ -27,6 +53,7 @@ const typeDefs = gql`
     cards: [DomainCard]!
   }
 
+  # Classes
   type CharacterClass {
     id: ID!
     type: String!
@@ -37,6 +64,7 @@ const typeDefs = gql`
     source: Source!
   }
 
+  # Subclasses
   type Subclass {
     id: ID!
     type: String!
@@ -75,6 +103,7 @@ const typeDefs = gql`
     description: String
   }
 
+  # Ancestries
   type Ancestry {
     type: String
     name: String!
@@ -86,6 +115,7 @@ const typeDefs = gql`
     source: Source!
   }
 
+  # Communities
   type Community {
     type: String
     name: String
@@ -97,38 +127,15 @@ const typeDefs = gql`
     source: Source!
   }
 
-  type Trait {
-    id: String!
-    name: String
-    type: String
-    mechanic: String
-    frequency: String
-    description: String
-    descriptionFormat: String
-  }
-
-  type Tag {
-    categories: [String]
-    mechanics: [String]
-    themes: [String]
-  }
-
-  type File {
-    id: String
-    url: String
-    width: Int
-    height: Int
-    format: String
-  }
-
   type Query {
-    classes(verbose: Boolean): [CharacterClass]!
-    class(id: ID!, verbose: Boolean): CharacterClass
     ancestries: [Ancestry]!
     ancestry(id: ID!): Ancestry
+    classes(verbose: Boolean): [CharacterClass]!
+    class(id: ID!, verbose: Boolean): CharacterClass
     communities: [Community]!
     community(id: ID!): Community
     domains: DomainQuery
+    domain(id: ID!): Domain
   }
 `;
 
