@@ -1,4 +1,5 @@
 {
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
   "functions": {
     "api/graphql.ts": {
       "memory": 256,
