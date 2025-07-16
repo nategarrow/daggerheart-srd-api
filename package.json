@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "postbuild": "cp -R src/routes dist/routes",
-    "start": "pnpm tsc && node ./dist/index.js"
+    "vercel-build": "tsc",
+    "postbuild": "cp -R api/routes dist/routes",
+    "local": "pnpm tsc && node ./dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -14,12 +15,14 @@
   "packageManager": "pnpm@10.12.1",
   "dependencies": {
     "@apollo/server": "^4.12.2",
-    "express": "^5.1.0",
+    "@as-integrations/next": "^3.2.0",
+    "@graphql-tools/load-files": "^7.0.1",
     "graphql": "^16.11.0",
     "graphql-tag": "^2.12.6"
   },
   "devDependencies": {
     "@types/node": "^24.0.1",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vercel": "^44.4.1"
   }
 }

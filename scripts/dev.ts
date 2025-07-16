@@ -1,8 +1,8 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 
-import typeDefs from "./schema";
-import resolvers from "./resolvers";
+import typeDefs from "./dist/schema";
+import resolvers from "./dist/resolvers";
 
 const server = new ApolloServer({
   typeDefs,
@@ -16,4 +16,3 @@ const server = new ApolloServer({
 
   console.log(`🚀  Server ready at: ${url}`);
 })();
-
