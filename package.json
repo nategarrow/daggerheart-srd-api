@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "vercel-build": "tsc && pnpm postbuild",
-    "postbuild": "cp -R dist/api ./api && cp -R api/routes dist/routes",
+    "postbuild": "cp -R api/routes dist/ && cp api/srd-schema.graphql dist/",
     "local": "pnpm tsc && node ./dist/index.js"
   },
   "keywords": [],
