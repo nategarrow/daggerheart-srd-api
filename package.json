@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "vercel-build": "tsc",
-    "postbuild": "cp -R api/routes dist/routes",
+    "vercel-build": "tsc && pnpm postbuild",
+    "postbuild": "cp -R dist/api ./api && cp -R api/routes dist/routes",
     "local": "pnpm tsc && node ./dist/index.js"
   },
   "keywords": [],
