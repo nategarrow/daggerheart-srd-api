@@ -12,7 +12,16 @@ const server = new ApolloServer({
 
 export default startServerAndCreateNextHandler(server, {
   // optional: build a context object here
-  context: async (req, res) => ({
-    ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
-  }),
+  context: async (req, res) => {
+    res.setHeader("Access-Control-Allow-Origin", "*"),
+      res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS"),
+      res.setHeader(
+        "Access-Control-Allow-Headers",
+        "Content-Type, Authorization"
+      );
+
+    return {
+      ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
+    };
+  },
 });
